@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>Real Madrid Team</title>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		
+		<meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Onlino" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width = device-width, initial-scale = 1, user-scalable = no">
+
+		
+	    <link rel="shortcut icon" href="img/icon.jpg?version=1">
+		<link rel="apple-touch-icon" href="img/icon.jpg?version=1">
+		<link rel="apple-touch-startup-image" href="img/icon.jpg?version=1">
+		<link rel="apple-touch-icon-precomposed" href="img/icon.jpg?version=1">
+		
+        <script src="js/common.js"></script>
+		<link href="css/common.css" rel="stylesheet">
+		
+
+	</head>
+	<body>
+
+        <div class="body">
+
+            <h2>
+                Real Madrid Team Details
+            </h2>
+
+            <div id="message" class="message hidden">
+                Team Details has been saved successufully
+			</div>
+    
+            <div class="field">
+                <label for="name" class="label">
+                    Name
+                </label>
+                <input id="name" name="name" class="input" type="text" maxlength="100" required="required" placeholder="Name" autocomplete="off">
+            </div>
+    
+            
+            <div class="field">
+                <label for="history" class="label">
+                    History
+                </label>
+                <textarea id="history" name="history" class="input" maxlength="500" required="required" placeholder="History" autocomplete="off"></textarea>
+            </div>
+    
+           
+            <div class="field">
+                <label for="yearOfEstablishment" class="label">
+                  Year of Establishment
+                </label>
+                <input id="yearOfEstablishment" name="yearOfEstablishment" class="input" type="tel" maxlength="4" required="required" placeholder="Year of Establishment" autocomplete="off">
+            </div> 
+    
+            <div class="field">
+                <label for="address" class="label">
+                 Address
+                </label>
+                <input id="address" name="name" class="input" type="text" maxlength="100" required="required" placeholder="Address" autocomplete="off">
+            </div> 
+    
+            <div class="field">
+                <label for="sports" class="label">
+                 Sports
+                </label>
+                <br>
+                <input id="football" type="checkbox" value="Football">Football
+                <input id="basketball" type="checkbox" value="Basketball">Basketball
+                <input id="handball" type="checkbox" value="Handball">Handball
+                <input id="volleyball" type="checkbox" value="Volleyball">Volleyball
+            </div>  
+            <div class="field">
+                <label for="country" class="label">
+                    Country
+                </label>
+                <select id="country" class="input">
+                    <option value="">Country</option>
+                    <option>England</option>
+                    <option>Spain</option>
+                    <option>Italy</option>
+                </select>
+            </div> 
+    
+            <div id="save" class="field center">
+                <br>
+                <button class="button" onclick="saveTeam()">Save Team Details</button>
+            </div>
+
+        </div>
+
+        
+	</body>
+</html>

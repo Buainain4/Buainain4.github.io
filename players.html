@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>Real Madrid Team</title>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		
+		<meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Onlino" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width = device-width, initial-scale = 1, user-scalable = no">
+
+		
+	    <link rel="shortcut icon" href="img/icon.jpg?version=1">
+		<link rel="apple-touch-icon" href="img/icon.jpg?version=1">
+		<link rel="apple-touch-startup-image" href="img/icon.jpg?version=1">
+		<link rel="apple-touch-icon-precomposed" href="img/icon.jpg?version=1">
+		
+        <script src="js/common.js"></script>
+		<link href="css/common.css" rel="stylesheet">
+		
+
+	</head>
+	<body>
+
+        <h2>
+            Real Madrid Team Players
+        </h2>
+
+        <table id="players" border="1" width="100%" align="center">
+            <thead>
+                <tr align="center">
+                    <th>
+                        #
+                    </th>
+                    <th>
+                       Kit Number
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Join Date
+                    </th>
+                    <th>
+                        <button onclick="addPlayer()">Add Player</button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        Raul
+                    </td>
+                    <td>
+                        1996
+                    </td>
+                    <td>
+                        <button onclick="editPlayer(1)">Edit Player</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <form id="form" class="form-hidden">
+
+            <div>
+                <label for="number">
+                    Number
+                </label>
+                <input id="number" name="number" class="input" type="tel" maxlength="2" required="required" placeholder="Number" autocomplete="off">
+            </div>
+            
+            <div>
+                <label for="name">
+                    Name
+                </label>
+                <input id="name">
+            </div>
+    
+            <div>
+                <label for="joinDate">
+                    Join Date
+                </label>
+                <input id="joinDate">
+            </div>
+    
+            <div>
+                <input type="button" value="Save Player Details" onclick="savePlayer()">
+            </div>
+
+            
+        </form>
+        
+	</body>
+</html>
